@@ -13,8 +13,8 @@ export default class View {
     this._parentElement.insertAdjacentHTML('afterbegin', markUp);
   }
   update(data) {
-    if (!data || (Array.isArray(data) && data.length === 0))
-      return this.renderError();
+    // if (!data || (Array.isArray(data) && data.length === 0))
+    //   return this.renderError();
 
     this._data = data;
     const newMarkUp = this._generateMarkup();
